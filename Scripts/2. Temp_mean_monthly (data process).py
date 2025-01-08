@@ -108,3 +108,9 @@ for attr in attributes:
         df3 = df_1981_1990[['x','y']]
         df3['TempDiff'] = df_2011_2020['MeanTemp'] - df_1981_1990['MeanTemp']      
         df3.to_csv(attr+'/'+mnt+'/TempVariation'+'.csv')
+
+#added code
+df1 = pd.DataFrame(list1)
+df1.columns = ['Max','Min','Average']
+df1.to_csv(path+'/Table3.csv',index=False)
+#####################################
